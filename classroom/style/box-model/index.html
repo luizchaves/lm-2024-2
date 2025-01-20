@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      .container {
+        display: block;
+        width: 960px;
+        margin: auto;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      h2 {
+        margin-top: 3rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #000;
+      }
+
+      content ul {
+        list-style: none;
+      }
+
+      content ul li {
+        display: inline-block;
+        width: 200px;
+      }
+
+      aside {
+        max-width: 400px;
+      }
+
+      @media print {
+        aside {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <content class="container">
+      <h1 class="text-center">Box Model</h1>
+      <h2>Sumário</h2>
+      <ul>
+        <li>Display</li>
+        <li>Margin</li>
+      </ul>
+      <h2>Display</h2>
+      <p>lorem</p>
+      <p>ipsum</p>
+      <p>
+        Lorem <b>ipsum</b> <em>dolor</em> sit amet consectetur adipisicing elit.
+        Velit quas cum fugiat mollitia rem, nisi, possimus aspernatur voluptatem
+        excepturi nam, consequatur quos? Odit rem quo perferendis natus impedit
+        aliquam accusamus?
+      </p>
+      <p>
+        Magnam, veritatis a? Ea deleniti aspernatur quaerat saepe eius. Deleniti
+        aspernatur aliquid alias quam beatae eos repudiandae iusto quae ex
+        inventore vitae necessitatibus provident reiciendis laborum temporibus
+        exercitationem, at dolor?
+      </p>
+      <p>
+        Voluptate quae odio aliquid! Molestiae, cupiditate minus mollitia dolor
+        placeat perferendis ullam vero impedit nihil aperiam itaque in
+        laudantium repellat distinctio magnam aut, ex doloremque, ab deserunt et
+        fuga quaerat.
+      </p>
+      <p>
+        Dolorem mollitia dicta unde ea quos necessitatibus labore, magnam nemo
+        animi molestias alias corrupti, amet libero in hic. Earum facere modi
+        laudantium blanditiis provident impedit rerum porro magni repudiandae
+        libero?
+      </p>
+      <h2>Margin</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quasi
+        assumenda consequatur eaque, unde maiores non dolores distinctio fuga
+        quo voluptatibus est fugit, reprehenderit at odio aliquam qui ad rerum.
+      </p>
+    </content>
+    <aside>
+      <h2>Aside</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+    </aside>
+  </body>
+</html>
