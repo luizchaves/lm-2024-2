@@ -12,12 +12,6 @@
   src: local('Montserrat Bold'), local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.ttf) format('truetype');
 }
 
-@media (max-width: 600px) {
-  .mobile-hidden {
-    display: none;
-  }
-}
-
 body {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0px;
@@ -72,28 +66,10 @@ main {
   color: #333;
   text-align: center;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 5rem 1rem;
-  padding: 4rem 2rem;
+  padding: 4rem 10rem;
 }
-
-/* @media (max-width: 600px) {
-  main .service:nth-child(-n+4) {
-    display: none;
-  }
-} */
-
-@media (min-width: 600px) {
-  main {
-    padding: 4rem 4rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  main {
-    padding: 4rem 10rem;
-  }
-}
-
 
 main .service .circle-icon {
   background-color: #fed136;
@@ -108,16 +84,8 @@ main .service .circle-icon {
   margin: auto;
 }
 
-@media (min-width: 600px) {
-  main .service-description {
-    grid-column: 1 / 3;
-  }
-}
-
-@media (min-width: 1000px) {
-  main .service-description {
-    grid-column: 1 / 4;
-  }
+main .service-description {
+  grid-column: 1 / 4;
 }
 
 main .service-description  h1 {
@@ -144,7 +112,7 @@ footer .footer-content {
   text-align: center;
   display: grid;
   grid-gap: 30px;
-  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
   padding: 40px 15% 60px;
 }
 
@@ -167,6 +135,7 @@ footer section.social a {
   justify-content: center;
   align-content: center;
   text-decoration: none;
+  /*transition: all .6s;*/
 }
 
 footer section.social a:hover {
