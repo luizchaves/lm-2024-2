@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-sans-serif: Montserrat, 'Helvetica Neue', Helvetica, Arial,
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body class="m-0 font-sans-serif">
+    <!-- Header -->
+    <header
+      class="bg-[url(img/header-bg.jpg)] bg-cover bg-fixed bg-center h-screen min-h-[400px] flex justify-center items-center text-center"
+    >
+      <div class="text-[#ecece2]">
+        <h1 class="m-0 text-5xl font-bold uppercase">Nome do Portifólio</h1>
+        <p class="m-8 text-3xl italic">
+          Um breve subtítulo de impacto da página inicial.
+        </p>
+        <a
+          href="#"
+          class="text-white bg-[#fed136] hover:bg-[#fe0100] border border-[#fed136] rounded-[3px] text-2xl px-10 py-5 leading-[1.43] text-center uppercase cursor-pointer no-underline"
+        >
+          Veja mais
+        </a>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="text-[#333] text-center grid gap-[5rem_1rem] p-16 md:p-40">
+      <section class="col-span-1 sm:col-span-2 md:col-span-3">
+        <h1 class="text-5xl font-bold m-10">SERVICES</h1>
+        <p class="text-[#777] italic">
+          Lorem ipsum dolor sit amet consectetur, dolor sit amet consectetur.
+        </p>
+      </section>
+      <section class="service space-y-6">
+        <span
+          class="bg-[#fed136] text-white size-24 flex justify-center items-center rounded-full text-5xl mx-auto"
+        >
+          <i class="fa fa-desktop" aria-hidden="true"></i>
+        </span>
+        <h1 class="text-2xl font-bold">Consectetur lorem</h1>
+        <p class="text-[#777] text-sm leading-[1.75]">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum
+          dolor sit amet, consectetur adipisicing.
+        </p>
+      </section>
+      <section class="service space-y-6">
+        <span
+          class="bg-[#fed136] text-white size-24 flex justify-center items-center rounded-full text-5xl mx-auto"
+        >
+          <i class="fa fa-thermometer-quarter" aria-hidden="true"></i>
+        </span>
+        <h1 class="text-2xl font-bold">Lorem ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      </section>
+      <section class="service space-y-6">
+        <span
+          class="bg-[#fed136] text-white size-24 flex justify-center items-center rounded-full text-5xl mx-auto"
+        >
+          <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        </span>
+        <h1 class="text-2xl font-bold">Consectetur elit</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum
+          dolor sit amet, consectetur adipisicing.
+        </p>
+      </section>
+      <section class="service hidden sm:block space-y-6">
+        <span
+          class="bg-[#fed136] text-white size-24 flex justify-center items-center rounded-full text-5xl mx-auto"
+        >
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </span>
+        <h1 class="text-2xl font-bold">Lorem ipsum dolor</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur elit. Lorem ipsum dolor sit
+          amet, consectetur adipisicing.
+        </p>
+      </section>
+      <section class="service hidden md:block space-y-6">
+        <span
+          class="bg-[#fed136] text-white size-24 flex justify-center items-center rounded-full text-5xl mx-auto"
+        >
+          <i class="fa fa-flask" aria-hidden="true"></i>
+        </span>
+        <h1 class="text-2xl font-bold">Consectetur ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor
+          sit amet, consectetur adipisicing.
+        </p>
+      </section>
+      <section class="service hidden md:block space-y-6">
+        <span
+          class="bg-[#fed136] text-white size-24 flex justify-center items-center rounded-full text-5xl mx-auto"
+        >
+          <i class="fa fa-film" aria-hidden="true"></i>
+        </span>
+        <h1 class="text-2xl font-bold">Lorem ipsum dolor</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla atque
+          id autem aliquid reiciendis minima.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#ecece2]">
+      <section
+        class="text-center grid grid-cols-1 md:grid-cols-3 gap-7 p-[40px_15%_60px]"
+      >
+        <section class="address">
+          <h1 class="font-bold">LOCATION</h1>
+          <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+        </section>
+        <section class="social">
+          <h1 class="font-bold">AROUND THE WEB</h1>
+          <ul class="grid grid-cols-4 list-none m-0 p-0">
+            <li>
+              <a
+                href="#"
+                class="m-4 text-[#555] border-3 border-[#555] rounded-full size-12 grid place-content-center no-underline hover:bg-[#555] hover:text-white"
+              >
+                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="m-4 text-[#555] border-3 border-[#555] rounded-full size-12 grid place-content-center no-underline hover:bg-[#555] hover:text-white"
+              >
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="m-4 text-[#555] border-3 border-[#555] rounded-full size-12 grid place-content-center no-underline hover:bg-[#555] hover:text-white"
+              >
+                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="m-4 text-[#555] border-3 border-[#555] rounded-full size-12 grid place-content-center no-underline hover:bg-[#555] hover:text-white"
+              >
+                <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </section>
+        <section class="about">
+          <h1 class="font-bold">ABOUT FREELANCER</h1>
+          <p>
+            Freelance is a free to use, open source Bootstrap theme created by
+            Start Bootstrap.
+          </p>
+        </section>
+      </section>
+      <section class="p-4 text-center text-[#555] bg-[#c7c7af]">
+        <span
+          >@2016 feito com HTML
+          <i class="fa fa-heart text-red-500" aria-hidden="true"></i> CSS</span
+        >
+      </section>
+    </footer>
+  </body>
+</html>
